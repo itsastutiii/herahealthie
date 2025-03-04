@@ -5,17 +5,17 @@ class BlogsPage extends StatelessWidget {
   final List<Map<String, String>> blogs = [
     {
       "imagePath": "assets/blog/blog1.png",
-      "title": "The Science Behind Endometriosis",
+      "title": "Nature and Period Pain: Natural Remedies over Pills",
       "author": "Dr. A. Sharma"
     },
     {
       "imagePath": "assets/blog/blog2.png",
-      "title": "How Nutrition Impacts Hormonal Balance",
+      "title": "Pads and the Environment",
       "author": "Sarah Lee"
     },
     {
-      "imagePath": "assets/blog3.jpg",
-      "title": "Managing Chronic Pain with Mindfulness",
+      "imagePath": "assets/blog/blog3.png",
+      "title": "To Eat or Not to Eat? That is the Question...",
       "author": "John Doe"
     },
   ];
@@ -100,6 +100,10 @@ class BlogCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       elevation: 3,
+      // shape: RoundedRectangleBorder(
+      //   borderRadius: BorderRadius.circular(12),
+      //   side: BorderSide(color: Colors.black, width: 1), // Outline here
+      // ),
       shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,

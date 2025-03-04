@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:herahealthie/bogs.dart';
 import 'package:herahealthie/profile.dart';
+import 'package:herahealthie/shop.dart';
 import 'package:table_calendar/table_calendar.dart';
 
 class HomePage extends StatefulWidget {
@@ -224,7 +225,15 @@ class _HomePageState extends State<HomePage> {
             IconButton(icon: Icon(Icons.local_hospital), onPressed: () {}),
             SizedBox(width: 40), // Space for the floating action button
             IconButton(icon: Icon(Icons.chat), onPressed: () {}),
-            IconButton(icon: Icon(Icons.shopping_cart), onPressed: () {}),
+            IconButton(
+              icon: Icon(Icons.shopping_cart),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ShopPage()),
+                );
+              },
+            ),
           ],
         ),
       ),

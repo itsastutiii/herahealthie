@@ -37,6 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.6
   table_calendar:
   file_picker: ^8.0.5
+  carousel_slider: ^5.0.0
 
 dev_dependencies:
   flutter_test:
@@ -65,6 +66,31 @@ flutter:
     - assets/profile_pic.png
     - assets/blog/blog1.png
     - assets/blog/blog2.png
+    - assets/blog/blog3.png
+    - assets/shop/shop_banner.png
+    - assets/shop/kittypad/kitty.png
+    - assets/shop/kittypad/kitty_1.png
+    - assets/shop/kittypad/kitty_2.png
+    - assets/shop/kittypad/kitty_3.png
+    - assets/shop/kittypad/kitty_4.png
+    - assets/shop/orgpad/organic_pad.png
+    - assets/shop/orgpad/organic_pad_1.png
+    - assets/shop/orgpad/organic_pad_2.png
+    - assets/shop/orgpad/organic_pad_3.png
+    - assets/shop/stru/stru_cup.png
+    - assets/shop/stru/stru_cup_1.png
+    - assets/shop/stru/stru_cup_2.png
+    - assets/shop/stru/stru_cup_3.png
+    - assets/shop/candf/candf.png
+    - assets/shop/candf/candf_1.png
+    - assets/shop/candf/candf_2.png
+    - assets/shop/protee/protee.png
+    - assets/shop/protee/protee_1.png
+    - assets/shop/protee/protee_2.png
+    - assets/shop/tea/tea_1.png
+    - assets/shop/tea/tea_2.png
+    - assets/shop/tea/tea.png
+
 
   #   - images/a_dot_ham.jpeg
 
