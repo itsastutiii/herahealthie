@@ -5,7 +5,15 @@ An app that helps women better understand and manage their reproductive health t
 
 ## 📖 About the Project
 
-This project is a for-credit mini project, started in Feb 2025, and due at the end of 3rd year 2nd Semester. This repository contains progress of the frontend, backend and machine learning models will be integrated soon. Afew Page are shown below for reference! 
+This project is a for-credit mini project, started in Feb 2025, and due at the end of 3rd year 2nd Semester. This repository contains progress of the frontend, backend and machine learning models will be integrated soon. A few pages are shown below for reference! 
+
+<div align="center">
+  <img src="assets/github/cal.png" alt="Calendar" width="200"/>
+  <img src="assets/github/profile.png" alt="Profile" width="200"/>
+  <img src="assets/github/shop.png" alt="Shop" width="200"/>
+  <img src="assets/github/prod.png" alt="Product" width="200"/>
+</div>
+
 
 ## 🌍 Introduction 
 Despite comprising half of the global population, women’s health remains significantly underfunded and under-researched, leading to delayed diagnoses, limited treatment options, and diminished quality of life. Conditions such as endometriosis, adenomyosis, PCOS, and severe menstrual pain continue to affect millions of women, yet healthcare systems lack the necessary tools for early detection and personalized management.
