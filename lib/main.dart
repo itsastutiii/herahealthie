@@ -30,8 +30,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false, // Hides the debug banner
       title: 'Menstrual Health App',
       theme: ThemeData(
+        dialogBackgroundColor: Colors.white,
         primarySwatch: Colors.pink,
       ),
+
       home: HomePage(), // Set HomePage as the initial screen
     );
   }
