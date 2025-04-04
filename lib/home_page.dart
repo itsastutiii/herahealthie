@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:herahealthie/bogs.dart';
+import 'package:herahealthie/chatbot_ui.dart';
 import 'package:herahealthie/profile.dart';
 import 'package:herahealthie/shop.dart';
 import 'package:table_calendar/table_calendar.dart';
@@ -49,6 +50,17 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     List<DateTime> predictedPeriods = getPredictedPeriodRange();
+    DateTime today = DateTime.now();
+
+    // Find the next predicted period date
+    DateTime? nextPeriod = predictedPeriods.firstWhere(
+      (date) => date.isAfter(today),
+      orElse: () => DateTime(0), // Default value if no future periods found
+    );
+
+    // Calculate days left until the next period
+    int daysLeft =
+        nextPeriod.year != 0 ? nextPeriod.difference(today).inDays : -1;
 
     return Scaffold(
       backgroundColor: Colors.white,
@@ -77,6 +89,19 @@ class _HomePageState extends State<HomePage> {
 
       body: Column(
         children: [
+          // 🔴 Display Days Left Message
+          Padding(
+            padding: const EdgeInsets.all(16.0),
+            child: Text(
+              daysLeft >= 0
+                  ? "$daysLeft days left until your next period"
+                  : "No upcoming periods predicted",
+              style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.pink),
+            ),
+          ),
           // 📅 Calendar Widget
           Padding(
             padding: const EdgeInsets.all(16.0),
@@ -224,7 +249,15 @@ class _HomePageState extends State<HomePage> {
             ),
             IconButton(icon: Icon(Icons.local_hospital), onPressed: () {}),
             SizedBox(width: 40), // Space for the floating action button
-            IconButton(icon: Icon(Icons.chat), onPressed: () {}),
+            IconButton(
+              icon: Icon(Icons.chat),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => ChatbotPage()),
+                );
+              },
+            ),
             IconButton(
               icon: Icon(Icons.shopping_cart),
               onPressed: () {

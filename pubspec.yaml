@@ -38,6 +38,9 @@ dependencies:
   table_calendar:
   file_picker: ^8.0.5
   carousel_slider: ^5.0.0
+  google_generative_ai: ^0.4.6
+  intl: ^0.20.2
+  flutter_dotenv: ^5.2.1
 
 dev_dependencies:
   flutter_test:
