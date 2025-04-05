@@ -4,6 +4,7 @@ import 'package:herahealthie/bogs.dart';
 import 'package:herahealthie/chatbot_ui.dart';
 import 'package:herahealthie/profile.dart';
 import 'package:herahealthie/shop.dart';
+import 'package:herahealthie/survey.dart';
 import 'package:table_calendar/table_calendar.dart';
 
 class HomePage extends StatefulWidget {
@@ -217,7 +218,13 @@ class _HomePageState extends State<HomePage> {
                     ),
                     SizedBox(width: 10),
                     ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => InputFormPage()),
+                        );
+                      },
                       child: Text('Re-Take Quiz'),
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.pink,
