@@ -54,7 +54,7 @@ class _ChatbotPageState extends State<ChatbotPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Chatbot"),
-        backgroundColor: Colors.pink,
+        backgroundColor: Colors.pink[200],
       ),
       body: Column(
         children: [
@@ -104,7 +104,7 @@ class _ChatbotPageState extends State<ChatbotPage> {
                 FloatingActionButton(
                   onPressed: _sendMessage,
                   child: Icon(Icons.send, color: Colors.white),
-                  backgroundColor: Colors.pink,
+                  backgroundColor: Colors.pink[300],
                   mini: true,
                 ),
               ],

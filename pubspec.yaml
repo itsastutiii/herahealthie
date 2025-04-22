@@ -20,11 +20,12 @@ dependencies:
   google_generative_ai: ^0.4.6
   intl: ^0.20.2
   flutter_dotenv: ^5.2.1
-  firebase_core: ^3.4.0
+  firebase_core: #^3.4.0
   http: #^0.13.6
   firebase_auth: 
   cloud_firestore:
   flutter_local_notifications:
+  flutter_markdown:
 
 
 dev_dependencies:
@@ -73,3 +74,8 @@ flutter:
     - assets/shop/tea/tea_1.png
     - assets/shop/tea/tea_2.png
     - assets/shop/tea/tea.png
+    - assets/doctors/doctor1.png
+    - assets/doctors/doctor2.png
+    - assets/doctors/doctor3.png
+    - assets/doctors/doctor4.png
+    - assets/doctors/doctor5.png

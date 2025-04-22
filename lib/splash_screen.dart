@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:herahealthie/signup_screen.dart';
 import 'login_screen.dart';
 // import 'screens/auth/signup_screen.dart';
 
@@ -63,7 +64,12 @@ class SplashScreen extends StatelessWidget {
             ),
             const SizedBox(height: 16),
             OutlinedButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const SignUpScreen()),
+                );
+              },
               // onPressed: () => Navigator.push(
               // context,
               // MaterialPageRoute(builder: (_) => SignUpScreen()),

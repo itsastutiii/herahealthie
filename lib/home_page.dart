@@ -6,6 +6,7 @@ import 'package:herahealthie/profile.dart';
 import 'package:herahealthie/shop.dart';
 import 'package:herahealthie/survey.dart';
 import 'package:table_calendar/table_calendar.dart';
+import 'package:herahealthie/doctors_list.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -258,7 +259,14 @@ class _HomePageState extends State<HomePage> {
             ),
 
             //medical appointment
-            IconButton(icon: Icon(Icons.local_hospital), onPressed: () {}),
+            IconButton(
+                icon: Icon(Icons.local_hospital),
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => DoctorListPage()),
+                  );
+                }),
             SizedBox(width: 40), // Space for the floating action button
 
             //chatbot
