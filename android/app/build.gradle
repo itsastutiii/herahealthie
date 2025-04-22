@@ -48,7 +48,8 @@ android {
         applicationId "com.example.herahealthie"
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration.
-        minSdkVersion flutter.minSdkVersion
+        // minSdkVersion flutter.minSdkVersion
+        minSdkVersion 21
         targetSdkVersion flutter.targetSdkVersion
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
@@ -61,10 +62,23 @@ android {
             signingConfig signingConfigs.debug
         }
     }
+    //niche added
+    configurations.all {
+    resolutionStrategy.eachDependency { details ->
+        if (details.requested.group == 'org.jetbrains.kotlin') {
+            details.useVersion "1.8.22"
+        }
+    }
+}
+
 }
 
 flutter {
     source '../..'
 }
 
-dependencies {}
+dependencies {
+    //added 
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+}

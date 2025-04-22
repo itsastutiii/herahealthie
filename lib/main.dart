@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:herahealthie/splash_screen.dart';
 import 'home_page.dart'; // Import the home page file
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -23,10 +24,6 @@ Future<void> main() async {
   runApp(MyApp());
 }
 
-// void main() {
-//   runApp(MyApp());
-// }
-
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -38,7 +35,10 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.pink,
       ),
 
-      home: HomePage(), // Set HomePage as the initial screen
+      home: SplashScreen(), //init sc
+      routes: {
+        '/home': (context) => HomePage(), // 🔥 define this route
+      },
     );
   }
 }

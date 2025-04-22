@@ -1,4 +1,29 @@
+import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:herahealthie/resutls_page.dart';
+import 'package:http/http.dart' as http;
+
+Future<Map<String, dynamic>> sendToAPI(List<dynamic> inputs) async {
+  final url = Uri.parse(
+      'http://127.0.0.1:5000/predict'); // Change IP when testing on device
+
+  try {
+    final response = await http.post(
+      url,
+      headers: {"Content-Type": "application/json"},
+      body: jsonEncode({"input": inputs}),
+    );
+
+    if (response.statusCode == 200) {
+      return jsonDecode(response.body);
+    } else {
+      throw Exception("API error: ${response.body}");
+    }
+  } catch (e) {
+    print("Error sending request: $e");
+    return {"error": e.toString()};
+  }
+}
 
 class InputFormPage extends StatefulWidget {
   const InputFormPage({Key? key}) : super(key: key);
@@ -34,31 +59,59 @@ class _InputFormPageState extends State<InputFormPage> {
   // Converts bools and selects to doubles
   int boolToInt(bool b) => b ? 1 : 0;
 
-  void handleSubmit() {
+  void handleSubmit() async {
     try {
       final List<double> inputs = [
-        double.parse(ageController.text), // 1. Age
-        double.parse(bmiController.text), // 2. BMI
+        double.tryParse(ageController.text) ?? 0.0, // 1
+        double.tryParse(bmiController.text) ?? 0.0, // 2
         boolToInt(hasRegularCycles).toDouble(), // 3
         boolToInt(hasHirsutism).toDouble(), // 4
         acneSeverity.toDouble(), // 5
         boolToInt(familyHistoryPCOS).toDouble(), // 6
         boolToInt(insulinResistance).toDouble(), // 7
-        double.parse(painController.text), // 8
+        double.tryParse(painController.text) ?? 0.0, // 8
         boolToInt(hormoneAbnormal).toDouble(), // 9
         boolToInt(experiencedInfertility).toDouble(), // 10
-        double.parse(lifestyleController.text), // 11
+        double.tryParse(lifestyleController.text) ?? 0.0, // 11
         stressLevel.toDouble(), // 12
         boolToInt(isUrban).toDouble(), // 13
         socioeconomicStatus.toDouble(), // 14
         boolToInt(awareOfPCOS).toDouble(), // 15
         boolToInt(fertilityConcerns).toDouble(), // 16
-        double.parse(likelihoodController.text), // 17
+        double.tryParse(likelihoodController.text) ?? 0.0, // 17
       ];
 
-      print('Sending: $inputs'); // ⬅️ Replace with API/Firebase logic
+      print('Sending: $inputs');
+
+      final result = await sendToAPI(inputs);
+
+      if (result.containsKey('error')) {
+        showDialog(
+          context: context,
+          builder: (_) => AlertDialog(
+            title: const Text("Error"),
+            content: Text(result['error']),
+            actions: [
+              TextButton(
+                onPressed: () => Navigator.pop(context),
+                child: const Text("OK"),
+              ),
+            ],
+          ),
+        );
+      } else {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (_) => ResultsPage(
+              pcosProbability: result['pcos_probability'],
+              endoProbability: result['endo_probability'],
+            ),
+          ),
+        );
+      }
     } catch (e) {
-      print('Error parsing inputs: $e');
+      print('Error handling submit: $e');
     }
   }
 
@@ -165,12 +218,14 @@ class _InputFormPageState extends State<InputFormPage> {
               const SizedBox(height: 20),
               ElevatedButton(
                 onPressed: handleSubmit,
-                child:
-                    const Text("Submit", style: TextStyle(color: Colors.white)),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.pink,
                 ),
-              )
+                child: const Text(
+                  "Submit",
+                  style: TextStyle(color: Colors.white),
+                ),
+              ),
             ],
           ),
         ),
