@@ -5,7 +5,7 @@ An app that helps women better understand and manage their reproductive health t
 
 ## 📖 About the Project
 
-This project is a for-credit mini project, started in Feb 2025, and due at the end of 3rd year 2nd Semester. Team Members: Astuti, Pranavi, Siri, Harshitha, Ankitha. This repository contains progress of the frontend, backend and machine learning models will be integrated soon. A few pages are shown below for reference! 
+This project is a for-credit mini project, started in Feb 2025, and due at the end of 3rd year 2nd Semester. This repository contains progress of the frontend, backend and machine learning models will be integrated soon. A few pages are shown below for reference! 
 
 <div align="center">
   <img src="assets/github/cal.png" alt="Calendar" width="200"/>
@@ -69,8 +69,7 @@ Backend:
     Symptom-Based Diagnosis Model for PCOC and Endometriosis (Random Forest & Ensemble Learning)
   
 🚧 In Progress
-  1. Flutter Development for Frontend 
-  2. Cycle Prediction Algorithm – Collecting sample datasets for AI training
+  1. Cycle Prediction Algorithm – Collecting sample datasets for AI training
 
 ⏭️ Next Steps
   1. Backend Development – Firestore database integration & API connections
