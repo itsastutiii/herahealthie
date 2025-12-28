@@ -3,7 +3,9 @@
 Problem Statement: 
 An app that helps women better understand and manage their reproductive health through symptom analysis and early diagnosis of reproductive issues. 
 
-DEMO VID LINK: https://drive.google.com/file/d/18CBHqDRdZbBAKRjqVHLiqfa8-oMnib01/view?usp=sharing
+Demo vid preview:
+https://github.com/user-attachments/assets/52ccdf82-855c-4a2d-8aa2-ed746d0afec7
+
 
 ## 📖 About the Project
 
@@ -70,14 +72,4 @@ Backend:
 
     Symptom-Based Diagnosis Model for PCOC and Endometriosis (Random Forest & Ensemble Learning)
   
-🚧 In Progress
-  1. Cycle Prediction Algorithm – Collecting sample datasets for AI training
-
-⏭️ Next Steps
-  1. Backend Development – Firestore database integration & API connections
-  
-  2. Chatbot, Doctor Ready Reports Frontend and Backend 
-  
-  3. AI Model Testing – Fine-tuning accuracy using real & synthetic data
-  
-  4. Beta Version Release – Internal testing & faculty review
+🚧 More features and updates coming soon in Phase 2!
