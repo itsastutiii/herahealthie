@@ -26,7 +26,8 @@ Note: Added Blogs and Shop after taking User Survey of Targeted Demographic
 - Medical Appointment Booking → Dynamic, can be expanded to Telemedicine in-app if time permits
 - Chatbot → replace with an actual model, preferably edge. 
 - Profile → extend to doctor ready reports. 
-- Add support for vernacular languages 
+- Add support for vernacular languages
+- (optional) Wearable Integration
 
 
 
