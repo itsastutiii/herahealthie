@@ -1,21 +1,21 @@
 # 🩺 herahealthie
 
-Main Feature Preview:
+Model Preview:
 https://github.com/user-attachments/assets/52ccdf82-855c-4a2d-8aa2-ed746d0afec7
 
-Entire Project (So far) Preview: https://drive.google.com/file/d/18CBHqDRdZbBAKRjqVHLiqfa8-oMnib01/view?usp=drive_link 
+Phase 1 Implementation Preview: https://drive.google.com/file/d/18CBHqDRdZbBAKRjqVHLiqfa8-oMnib01/view?usp=drive_link 
 
 ## Project Summary 
 
-Problem Statement: the basic idea is to create an app that helps women better understand and manage their reproductive health through symptom analysis and early diagnosis of reproductive issues, specifically PCOS and endometriosis. 
+Problem Statement: To create an app that helps women better understand and manage their reproductive health through symptom analysis and early diagnosis of reproductive issues, specifically PCOS and endometriosis. 
 
-### Features: 
+### Features
 
 Implemented (Phase 1, Feb-April 2025):
 - Personalized Quiz for Profile Formation & Diagnosis (RF Model)
 - Menstrual Cycle Monitoring (Static)
 - Chatbot (Gemini API)
-- Medical Appointment Booking (Frontend Only)
+- Medical Appointment Booking (Frontend Only)\
 Note: Added Blogs and Shop after taking User Survey of Targeted Demographic
 
 
@@ -25,7 +25,7 @@ Original Plan of Phase 2:
 - Wearable Integration 
 
 
-Phase 2 Plan (Feb 2026 onwards):
+<b>Phase 2 Plan (Feb 2026 onwards):</b>
 - Ultrasound usage for prediction (ML Model) 
 - Tracking and Medical Appointment Booking → Dynamic 
 - Chatbot → replace with an actual model, preferably edgeAI. 
