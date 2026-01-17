@@ -1,10 +1,37 @@
 # 🩺 herahealthie
 
-Problem Statement: 
-An app that helps women better understand and manage their reproductive health through symptom analysis and early diagnosis of reproductive issues. 
-
-Demo vid preview:
+Main Feature Preview:
 https://github.com/user-attachments/assets/52ccdf82-855c-4a2d-8aa2-ed746d0afec7
+
+Entire Project (So far) Preview: https://drive.google.com/file/d/18CBHqDRdZbBAKRjqVHLiqfa8-oMnib01/view?usp=drive_link 
+
+## Project Summary 
+
+Problem Statement: the basic idea is to create an app that helps women better understand and manage their reproductive health through symptom analysis and early diagnosis of reproductive issues, specifically PCOS and endometriosis. 
+
+### Features: 
+
+Implemented (Phase 1, Feb-April 2025):
+- Personalized Quiz for Profile Formation & Diagnosis (RF Model)
+- Menstrual Cycle Monitoring (Static)
+- Chatbot (Gemini API)
+- Medical Appointment Booking (Frontend Only)
+Note: Added Blogs and Shop after taking User Survey of Targeted Demographic
+
+
+Original Plan of Phase 2:
+- X-Ray/Scan Analysis
+- Telemedicine In-App
+- Wearable Integration 
+
+
+Phase 2 Plan (Feb 2026 onwards):
+- Ultrasound usage for prediction (ML Model) 
+- Tracking and Medical Appointment Booking → Dynamic 
+- Chatbot → replace with an actual model, preferably edgeAI. 
+- Profile page should have something that resembles doctor ready reports, so it can be shown to a doctor via the app. Try doctor ready reports again. (Refer Apple Health)
+- Expand support for vernacular languages 
+
 
 
 ## 📖 About the Project
@@ -23,22 +50,6 @@ This project is a for-credit mini project, started in Feb 2025, and due at the e
 Despite comprising half of the global population, women’s health remains significantly underfunded and under-researched, leading to delayed diagnoses, limited treatment options, and diminished quality of life. Conditions such as endometriosis, adenomyosis, PCOS, and severe menstrual pain continue to affect millions of women, yet healthcare systems lack the necessary tools for early detection and personalized management.
 
 HeraHealth is an AI-powered platform designed to bridge this gap by offering a comprehensive, personalized approach to reproductive health. 
-
-## 🔑 Key Features 
-
-🚀 MVP:
-  1. Personalized Quiz for Profile Formation & Diagnosis 
-  2. Menstrual Cycle Monitoring 
-  3. Doctor-Ready Reports
-  4. Chatbot (Emotional Support)
-  5. Added Blogs and Shop after taking User Survey of Targeted Demographic
-
-🚀 Planned Features (Post-April 2025):
-
-  6. Medical Appointment Booking 
-  7. X-Ray/Scan Analysis
-  8. Telemedicine In-App
-  9. Wearable Integration 
 
 ## 🛠️ Tech Stack (MVP)
 Frontend: 
