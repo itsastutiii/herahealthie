@@ -16,25 +16,21 @@ Implemented (Phase 1, Feb-April 2025):
 - Menstrual Cycle Monitoring (Static)
 - Chatbot (Gemini API)
 - Medical Appointment Booking (Frontend Only)\
+
 Note: Added Blogs and Shop after taking User Survey of Targeted Demographic
-
-
-Original Plan of Phase 2:
-- X-Ray/Scan Analysis
-- Telemedicine In-App
-- Wearable Integration 
 
 
 <b>Phase 2 Plan (Feb 2026 onwards):</b>
 - Ultrasound usage for prediction (ML Model) 
-- Tracking and Medical Appointment Booking → Dynamic 
-- Chatbot → replace with an actual model, preferably edgeAI. 
-- Profile page should have something that resembles doctor ready reports, so it can be shown to a doctor via the app. Try doctor ready reports again. (Refer Apple Health)
-- Expand support for vernacular languages 
+- Cycle Tracking → More Dynamic
+- Medical Appointment Booking → Dynamic, can be expanded to Telemedicine in-app if time permits
+- Chatbot → replace with an actual model, preferably edge. 
+- Profile → extend to doctor ready reports. 
+- Add support for vernacular languages 
 
 
 
-## 📖 About the Project
+## About the Project
 
 This project is a for-credit mini project, started in Feb 2025, and due at the end of 3rd year 2nd Semester. This repository contains progress of the frontend, backend and machine learning models will be integrated soon. A few pages are shown below for reference! 
 
@@ -51,7 +47,7 @@ Despite comprising half of the global population, women’s health remains signi
 
 HeraHealth is an AI-powered platform designed to bridge this gap by offering a comprehensive, personalized approach to reproductive health. 
 
-## 🛠️ Tech Stack (MVP)
+## Tech Stack (MVP)
 Frontend: 
 
     Flutter Mobile Application 
@@ -62,7 +58,7 @@ Backend:
   
     Machine Learning (Ensemble Learning, Random Forest)
 
-## 📌 Progress 
+## Progress 
 ✅ Completed
 
   1. Abstract – Defined problem statement, objectives, and scope.
@@ -83,4 +79,3 @@ Backend:
 
     Symptom-Based Diagnosis Model for PCOC and Endometriosis (Random Forest & Ensemble Learning)
   
-🚧 More features and updates coming soon in Phase 2!
